@@ -1,0 +1,6 @@
+{
+  "name": "سامانه مدیریت و آموزش شجره طیبه صالحین بسیج",
+  "description": "سامانه جامع مدیریت، انتشار محتوای تربیتی، ثبت گزارش عملکرد، رتبه‌بندی حلقات و مرکز آموزش چندرسانه‌ای صالحین بسیج",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
