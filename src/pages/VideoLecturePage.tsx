@@ -44,7 +44,7 @@ export const VideoLecturePage: React.FC<VideoLecturePageProps> = ({
   return (
     <div className="space-y-6 pb-16 text-right max-w-4xl mx-auto">
       {/* Top Breadcrumb */}
-      <div className="flex items-center justify-between pb-3 border-b border-stone-200">
+      <div className="flex flex-wrap items-center justify-between gap-3 pb-3 border-b border-stone-200">
         <button
           onClick={onBack}
           className="flex items-center gap-1.5 text-xs font-bold text-stone-600 hover:text-stone-900 bg-white px-3 py-1.5 rounded-lg border border-stone-200 transition-colors shadow-xs"
@@ -65,6 +65,7 @@ export const VideoLecturePage: React.FC<VideoLecturePageProps> = ({
             src={video.thumbnailUrl}
             alt={video.title}
             referrerPolicy="no-referrer"
+            fetchPriority="high"
             className="w-full h-full object-cover opacity-75"
           />
 
@@ -79,8 +80,8 @@ export const VideoLecturePage: React.FC<VideoLecturePageProps> = ({
           </div>
 
           {/* Control bar */}
-          <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/90 via-black/50 to-transparent flex items-center justify-between text-white text-xs">
-            <div className="flex items-center gap-4">
+          <div className="absolute bottom-0 left-0 right-0 p-2 sm:p-4 bg-gradient-to-t from-black/90 via-black/50 to-transparent flex items-center justify-between text-white text-xs">
+            <div className="flex items-center gap-2 sm:gap-4 shrink-0">
               <button
                 onClick={() => setIsPlaying(!isPlaying)}
                 className="hover:text-[#E5C365] transition-colors"
@@ -91,7 +92,7 @@ export const VideoLecturePage: React.FC<VideoLecturePageProps> = ({
               <span className="font-mono text-xs">{currentTime} / {video.duration}</span>
             </div>
 
-            <div className="flex-1 mx-6">
+            <div className="flex-1 min-w-0 mx-2 sm:mx-6">
               <div className="w-full h-1.5 bg-stone-700 rounded-full cursor-pointer overflow-hidden">
                 <div
                   className="h-full bg-[#E5C365] transition-all"

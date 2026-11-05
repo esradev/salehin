@@ -153,7 +153,7 @@ export const ReportDetailPage: React.FC<ReportDetailPageProps> = ({
           <h3 className="text-xs font-bold text-stone-500 uppercase">مستند تصویری جلسه:</h3>
           <div className="rounded-xl overflow-hidden border border-stone-200 max-h-72">
             <img
-              src={report.photoUrl || '/src/assets/images/salehin_hero_banner_1793894946018.jpg'}
+              src={report.photoUrl || new URL('../assets/images/salehin_hero_banner_1793894946018.jpg', import.meta.url).href}
               alt="عکس جلسه حلقه صالحین"
               referrerPolicy="no-referrer"
               className="w-full h-full object-cover"

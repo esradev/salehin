@@ -189,7 +189,7 @@ export const PersonnelManagementView: React.FC<PersonnelManagementViewProps> = (
           />
         </div>
 
-        <div className="flex items-center gap-1 p-1 bg-stone-100 rounded-lg overflow-x-auto shrink-0">
+        <div className="flex items-center gap-1 p-1 bg-stone-100 rounded-lg overflow-x-auto min-w-0 w-full sm:w-auto max-w-full">
           <button
             onClick={() => setRoleFilter('all')}
             className={`px-2.5 py-1 text-xs font-medium rounded-md whitespace-nowrap transition-colors ${

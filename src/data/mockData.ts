@@ -1155,7 +1155,7 @@ export const MOCK_VIDEOS: VideoLesson[] = [
     category: 'روش اداره حلقه',
     summary:
       'در این جلسه تصویری، استاد به بررسی روانشناختی نسل جدید، پرهیز از شیوه‌های سنتی کلیشه‌ای، استفاده از منطق جذاب دینی و نقش بازی‌وارسازی در جلسات تربیتی می‌پردازد. این درس نشان می‌دهد چگونه می‌توان بدون تنزل دادن محتوا، فرم ارائه را متناسب با ادراک و ذوق نوجوانان بازطراحی کرد.',
-    thumbnailUrl: '/src/assets/images/educational_video_thumb_1793894947859.jpg',
+    thumbnailUrl: new URL('../assets/images/educational_video_thumb_1793894947859.jpg', import.meta.url).href,
     views: 1280,
     chapters: [
       { title: 'مقدمه و تغییرات فضای ادراکی نوجوانان امروز', time: '۰۰:۰۰' },
@@ -1180,7 +1180,7 @@ export const MOCK_VIDEOS: VideoLesson[] = [
     category: 'دشمن‌شناسی و بصیرت',
     summary:
       'تحلیل تکنیک‌های ترور شخصیتی، بمباران ابهام، ایجاد ناامیدی کاذب و راهبردهای تقویت ایمان و امید در میان اعضای پایگاه. در این کلاس ابعاد جنگ ترکیبی و مهندسی افکار عمومی با ذکر مصادیق عینی چند سال اخیر تشریح می‌شود.',
-    thumbnailUrl: '/src/assets/images/salehin_hero_banner_1793894946018.jpg',
+    thumbnailUrl: new URL('../assets/images/salehin_hero_banner_1793894946018.jpg', import.meta.url).href,
     views: 940,
     chapters: [
       { title: 'آناتومی شایعه و تکنیک‌های دروغ بزرگ', time: '۰۰:۰۰' },
@@ -1205,7 +1205,7 @@ export const MOCK_VIDEOS: VideoLesson[] = [
     category: 'مهارت‌های مربیگری',
     summary:
       'مهارت برقراری ارتباط چشمی، گوش دادن فعال و صمیمانه، تکنیک‌های لحن و ریتم کلام و کنترل استرس هنگام صحبت در جمع برای سرگروه‌ها و مربیان حلقه‌های صالحین.',
-    thumbnailUrl: '/src/assets/images/educational_video_thumb_1793894947859.jpg',
+    thumbnailUrl: new URL('../assets/images/educational_video_thumb_1793894947859.jpg', import.meta.url).href,
     views: 890,
     chapters: [
       { title: 'ارکان ارتباط موثر انسانی در بستر تشکیلات ایمانی', time: '۰۰:۰۰' },
@@ -1230,7 +1230,7 @@ export const MOCK_VIDEOS: VideoLesson[] = [
     category: 'روانشناسی و ارتباط با نسل نو',
     summary:
       'چرا شیوه‌های آمرانه پاسخگو نیست؟ راهکارهای نوین برای ایجاد رابطه محبت‌آمیز عمیق با نوجوانان دهه هشتاد و نود، رفع لجاجت، ایجاد هویت ایمانی مستقل و بازتعریف مفاهیم دینی متناسب با دغدغه‌های فکری آنان.',
-    thumbnailUrl: '/src/assets/images/salehin_hero_banner_1793894946018.jpg',
+    thumbnailUrl: new URL('../assets/images/salehin_hero_banner_1793894946018.jpg', import.meta.url).href,
     views: 1450,
     chapters: [
       { title: 'ریشه‌های بحران هویت و تنهایی نسل در عصر دیجیتال', time: '۰۰:۰۰' },
@@ -1255,7 +1255,7 @@ export const MOCK_VIDEOS: VideoLesson[] = [
     category: 'معرفت‌شناسی',
     summary:
       'تبیین اندیشه‌های زیربنایی کتاب «طرح کلی اندیشه اسلامی در قرآن»؛ تفاوت ایمان زنده و مجاهدت‌آفرین با باورهای سست و سنتی، ابعاد اجتماعی توحید و نفی اربابان متفرق و طاغوت‌های زمانه.',
-    thumbnailUrl: '/src/assets/images/educational_book_cover_1793894947725.jpg',
+    thumbnailUrl: new URL('../assets/images/educational_book_cover_1793894947725.jpg', import.meta.url).href,
     views: 780,
     chapters: [
       { title: 'ضرورت داشتن منظومه فکری و هندسه معرفتی منسجم', time: '۰۰:۰۰' },
@@ -1280,7 +1280,7 @@ export const MOCK_VIDEOS: VideoLesson[] = [
     category: 'روش اداره حلقه',
     summary:
       'معرفی تکنیک‌های گیمیفیکیشن (بازی‌وارسازی)، اجرای مسابقات هیجان‌انگیز مفاهیم قرآنی و احکام در صحن مسجد و پایگاه، ساخت چالش‌های گروهی و ایجاد شور و اشتیاق بدون کاستن از حرمت مسجد.',
-    thumbnailUrl: '/src/assets/images/educational_video_thumb_1793894947859.jpg',
+    thumbnailUrl: new URL('../assets/images/educational_video_thumb_1793894947859.jpg', import.meta.url).href,
     views: 1020,
     chapters: [
       { title: 'چرا بازی ابزار اصلی یادگیری در سنین نوجوانی است؟', time: '۰۰:۰۰' },
@@ -1305,7 +1305,7 @@ export const MOCK_VIDEOS: VideoLesson[] = [
     category: 'معرفت‌شناسی',
     summary:
       'طبقه‌بندی شبهات اعتقادی و تاریخی رایج در شبکه‌های اجتماعی، شیوه‌های پاسخگویی اقناعی و گام‌به‌گام به سوالات متربیان بدون ایجاد احساس گناه یا سرزنش، و تقویت تفکر نقادانه در پایگاه.',
-    thumbnailUrl: '/src/assets/images/salehin_hero_banner_1793894946018.jpg',
+    thumbnailUrl: new URL('../assets/images/salehin_hero_banner_1793894946018.jpg', import.meta.url).href,
     views: 1150,
     chapters: [
       { title: 'دسته‌بندی رایج‌ترین شبهات در ذهن جوانان و دانش‌آموزان', time: '۰۰:۰۰' },
@@ -1330,7 +1330,7 @@ export const MOCK_VIDEOS: VideoLesson[] = [
     category: 'اخلاق و تربیت',
     summary:
       'روایتی دلنشین از سیره فرماندهان شهید در دفاع مقدس، چگونگی تسخیر قلوب نیروها با فداکاری و ایثار، سوز دل مربی برای نجات نسل جوان، و ضرورت حضور در کنار بچه‌ها در سختی‌ها و شادی‌ها.',
-    thumbnailUrl: '/src/assets/images/educational_video_thumb_1793894947859.jpg',
+    thumbnailUrl: new URL('../assets/images/educational_video_thumb_1793894947859.jpg', import.meta.url).href,
     views: 1680,
     chapters: [
       { title: 'راز ماندگاری یاد شهدا و فرماندهان در دل‌ها', time: '۰۰:۰۰' },
@@ -1355,7 +1355,7 @@ export const MOCK_VIDEOS: VideoLesson[] = [
     category: 'روش اداره حلقه',
     summary:
       'چگونه برای هر جلسه حلقه یک سناریوی جذاب ۴۵ دقیقه‌ای طراحی کنیم؟ از تلاوت آیه کلیدی تا طرح سوال تکان‌دهنده، مشارکت دادن همه افراد، جمع‌بندی نکات و تعیین عملیات هفته پیش‌رو.',
-    thumbnailUrl: '/src/assets/images/educational_book_cover_1793894947725.jpg',
+    thumbnailUrl: new URL('../assets/images/educational_book_cover_1793894947725.jpg', import.meta.url).href,
     views: 820,
     chapters: [
       { title: 'آناتومی استاندارد یک جلسه موفق حلقه صالحین', time: '۰۰:۰۰' },
@@ -1380,7 +1380,7 @@ export const MOCK_VIDEOS: VideoLesson[] = [
     category: 'مدیریت اردو و امنیت',
     summary:
       'دستورالعمل‌ها و چک‌لیست‌های حیاتی ایمنی، تدابیر ترابری، مدیریت تغذیه سالم، پروتکل‌های حراست از اموال و جان متربیان، پیشگیری از حوادث احتمالی و هماهنگی با خانواده‌ها در سفرهای زیارتی و تربیتی.',
-    thumbnailUrl: '/src/assets/images/salehin_hero_banner_1793894946018.jpg',
+    thumbnailUrl: new URL('../assets/images/salehin_hero_banner_1793894946018.jpg', import.meta.url).href,
     views: 910,
     chapters: [
       { title: 'اهمیت اردو به عنوان قله برنامه‌های تربیتی صالحین', time: '۰۰:۰۰' },
@@ -1404,7 +1404,7 @@ export const MOCK_PAMPHLETS: Pamphlet[] = [
     author: 'شورای عالی تعلیم و تربیت سازمان بسیج مستضعفین',
     pages: 64,
     category: 'درسنامه‌های صالحین',
-    coverUrl: '/src/assets/images/educational_book_cover_1793894947725.jpg',
+    coverUrl: new URL('../assets/images/educational_book_cover_1793894947725.jpg', import.meta.url).href,
     downloadsCount: 2430,
     description:
       'این درسنامه شامل ۱۲ جلسه مدون هفتگی همراه با آیات کلیدی، احادیث تربیتی، خاطرات شهدا، سوالات مباحثه و برنامه‌های عملیاتی برای رده سنی نوجوان و جوان است که ساختار مباحثاتی استاندارد را پایه‌گذاری می‌کند.',
@@ -1439,7 +1439,7 @@ export const MOCK_PAMPHLETS: Pamphlet[] = [
     author: 'تدوین: گروه محتوایی استادیاران صالحین',
     pages: 88,
     category: 'طرح کلی اندیشه اسلامی',
-    coverUrl: '/src/assets/images/educational_book_cover_1793894947725.jpg',
+    coverUrl: new URL('../assets/images/educational_book_cover_1793894947725.jpg', import.meta.url).href,
     downloadsCount: 1890,
     description:
       'بررسی چهار رکن اصیل تفکر اسلامی شامل ایمان، توحید، نبوت و ولایت با بیانی شیوا، تحلیلی، مبارزاتی و کاربردی برای زندگی امروز بر اساس منظومه فکری رهبر معظم انقلاب.',
@@ -1474,7 +1474,7 @@ export const MOCK_PAMPHLETS: Pamphlet[] = [
     author: 'مرکز مشاوره و تربیت نوجوانان سازمان بسیج',
     pages: 72,
     category: 'روانشناسی نوجوان',
-    coverUrl: '/src/assets/images/educational_book_cover_1793894947725.jpg',
+    coverUrl: new URL('../assets/images/educational_book_cover_1793894947725.jpg', import.meta.url).href,
     downloadsCount: 1540,
     description:
       'کتابچه‌ای کاربردی برای شناخت تحولات دوران بلوغ، علل لجاجت‌ها، بحران‌های هویت‌یابی، نیازهای هیجانی و شیوه‌های طلایی گفتگوی بدون تنش با نسل نوجوان امروزی در حلقات صالحین.',
@@ -1509,7 +1509,7 @@ export const MOCK_PAMPHLETS: Pamphlet[] = [
     author: 'پژوهشکده مطالعات فضای مجازی و جنگ نرم',
     pages: 80,
     category: 'سواد رسانه و جنگ نرم',
-    coverUrl: '/src/assets/images/educational_book_cover_1793894947725.jpg',
+    coverUrl: new URL('../assets/images/educational_book_cover_1793894947725.jpg', import.meta.url).href,
     downloadsCount: 2110,
     description:
       'مهارت‌های تحلیل انتقادی پیام‌های رسانه‌ای، آشنایی با الگوریتم‌های شبکه‌های اجتماعی، تشخیص شایعات تصویری و هوش مصنوعی، و راهکارهای حفظ سلامت روانی در عصر بمباران اطلاعاتی.',
@@ -1544,7 +1544,7 @@ export const MOCK_PAMPHLETS: Pamphlet[] = [
     author: 'معاونت تبلیغ و آموزش‌های کاربردی',
     pages: 96,
     category: 'احکام و فقه کاربردی',
-    coverUrl: '/src/assets/images/educational_book_cover_1793894947725.jpg',
+    coverUrl: new URL('../assets/images/educational_book_cover_1793894947725.jpg', import.meta.url).href,
     downloadsCount: 3100,
     description:
       'آموزش گام‌به‌گام و تصویرسازی شده احکام ضروری تقلید، طهارت، وضو و تیمم، ارکان نماز، روزه، احکام نگاه و پوشش، و مسائل مستحدثه پیرامون بازی‌های آنلاین و خریدوفروش‌های مجازی.',
@@ -1579,7 +1579,7 @@ export const MOCK_PAMPHLETS: Pamphlet[] = [
     author: 'بنیاد حفظ آثار و نشر ارزش‌های دفاع مقدس',
     pages: 76,
     category: 'سیره شهدا',
-    coverUrl: '/src/assets/images/salehin_hero_banner_1793894946018.jpg',
+    coverUrl: new URL('../assets/images/salehin_hero_banner_1793894946018.jpg', import.meta.url).href,
     downloadsCount: 2850,
     description:
       'مجموعه‌ای خواندنی از خاطرات، دست‌نوشته‌ها و سیره رفتاری شهیدان ابراهیم هادی، مصطفی صدرزاده، مهدی باکری، محسن حججی و آرمان علی‌وردی در حلقه صالحین و کار با جوانان.',
@@ -1614,7 +1614,7 @@ export const MOCK_PAMPHLETS: Pamphlet[] = [
     author: 'پژوهشکده مدیریت راهبردی تعلیم و تربیت',
     pages: 84,
     category: 'مدیریت جهادی',
-    coverUrl: '/src/assets/images/educational_book_cover_1793894947725.jpg',
+    coverUrl: new URL('../assets/images/educational_book_cover_1793894947725.jpg', import.meta.url).href,
     downloadsCount: 1720,
     description:
       'راهنمای جامع اصول کارتیمی، شیوه‌های برنامه‌ریزی عملیاتی، تفویض اختیار، حل تعارضات پایگاهی، جذب منابع مردمی و مدیریت پروژه‌های فرهنگی و اجتماعی در تراز بسیج.',
@@ -1649,7 +1649,7 @@ export const MOCK_PAMPHLETS: Pamphlet[] = [
     author: 'ستاد تبیین گفتمان انقلاب اسلامی',
     pages: 92,
     category: 'تبیین بیانیه گام دوم',
-    coverUrl: '/src/assets/images/educational_book_cover_1793894947725.jpg',
+    coverUrl: new URL('../assets/images/educational_book_cover_1793894947725.jpg', import.meta.url).href,
     downloadsCount: 2240,
     description:
       'شرح تحلیلی هفت توصیه راهبردی مقام معظم رهبری شامل علم و پژوهش، معنویت و اخلاق، اقتصاد مقاومتی، عدالت و مبارزه با فساد، استقلال و آزادی، عزت ملی، و سبک زندگی اسلامی.',
@@ -1684,7 +1684,7 @@ export const MOCK_PAMPHLETS: Pamphlet[] = [
     author: 'معاونت تربیت و آموزش صالحین',
     pages: 70,
     category: 'روش‌های تدریس و حلقه‌داری',
-    coverUrl: '/src/assets/images/educational_video_thumb_1793894947859.jpg',
+    coverUrl: new URL('../assets/images/educational_video_thumb_1793894947859.jpg', import.meta.url).href,
     downloadsCount: 1690,
     description:
       'تکنیک‌های اداره جلسات بحث‌محور، فنون پرسشگری هدایت‌شده، کنترل افراد پرحرف یا حاشیه‌ساز در حلقه، شیوه‌های جمع‌بندی مباحث و ارزشیابی کیفی روند رشد متربیان.',
@@ -1719,7 +1719,7 @@ export const MOCK_PAMPHLETS: Pamphlet[] = [
     author: 'مدیریت اردوها و گردشگری سازمان بسیج',
     pages: 82,
     category: 'دستورالعمل اردوهای تربیتی',
-    coverUrl: '/src/assets/images/salehin_hero_banner_1793894946018.jpg',
+    coverUrl: new URL('../assets/images/salehin_hero_banner_1793894946018.jpg', import.meta.url).href,
     downloadsCount: 2050,
     description:
       'آیین‌نامه‌ها و چک‌لیست‌های ترابری ایمن، اسکان، تغذیه بهداشتی، بازی‌های هوای آزاد، برنامه‌های معنوی شبانه اردوگاه، مدیریت بودجه و ایمنی اردوهای یک‌روزه تا چندروزه.',

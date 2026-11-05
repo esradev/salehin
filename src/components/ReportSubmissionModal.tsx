@@ -30,7 +30,7 @@ export const ReportSubmissionModal: React.FC<ReportSubmissionModalProps> = ({
   ]);
   const [challenges, setChallenges] = useState('');
   const [selectedPhoto, setSelectedPhoto] = useState<string>(
-    '/src/assets/images/salehin_hero_banner_1793894946018.jpg'
+    new URL('../assets/images/salehin_hero_banner_1793894946018.jpg', import.meta.url).href
   );
 
   if (!isOpen) return null;

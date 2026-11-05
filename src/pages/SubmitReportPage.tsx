@@ -44,7 +44,7 @@ export const SubmitReportPage: React.FC<SubmitReportPageProps> = ({
   ]);
   const [challenges, setChallenges] = useState('');
   const [selectedPhoto, setSelectedPhoto] = useState<string>(
-    '/src/assets/images/salehin_hero_banner_1793894946018.jpg'
+    new URL('../assets/images/salehin_hero_banner_1793894946018.jpg', import.meta.url).href
   );
 
   // Individual attendance roster for Sargorouh

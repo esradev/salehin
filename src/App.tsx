@@ -270,7 +270,7 @@ export default function App() {
       )}
 
       {/* Main Full-Page Viewport */}
-      <main className="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 pt-6 pb-24 md:pb-12">
+      <main className="flex-1 max-w-7xl w-full min-w-0 mx-auto px-4 sm:px-6 lg:px-8 pt-6 pb-24 xl:pb-12">
         {/* 1. Dashboard View */}
         {currentPage === 'dashboard' && (
           <DashboardView

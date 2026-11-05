@@ -32,7 +32,7 @@ export const PamphletReaderPage: React.FC<PamphletReaderPageProps> = ({
   return (
     <div className="space-y-6 pb-16 text-right max-w-4xl mx-auto">
       {/* Top Breadcrumb & Controls */}
-      <div className="flex items-center justify-between pb-3 border-b border-stone-200">
+      <div className="flex flex-wrap items-center justify-between gap-3 pb-3 border-b border-stone-200">
         <button
           onClick={onBack}
           className="flex items-center gap-1.5 text-xs font-bold text-stone-600 hover:text-stone-900 bg-white px-3 py-1.5 rounded-lg border border-stone-200 transition-colors shadow-xs"
@@ -73,6 +73,7 @@ export const PamphletReaderPage: React.FC<PamphletReaderPageProps> = ({
             src={pamphlet.coverUrl}
             alt={pamphlet.title}
             referrerPolicy="no-referrer"
+            loading="lazy"
             className="w-full h-full object-cover"
           />
         </div>
@@ -132,8 +133,8 @@ export const PamphletReaderPage: React.FC<PamphletReaderPageProps> = ({
 
       {/* Main Full Page Reading Surface */}
       <article className="bg-white rounded-2xl border border-stone-200 p-6 sm:p-10 shadow-xs space-y-6">
-        <div className="pb-4 border-b border-stone-100 flex items-center justify-between">
-          <h2 className="text-lg sm:text-xl font-bold text-[#1A3326]">
+        <div className="pb-4 border-b border-stone-100 flex flex-wrap items-center justify-between gap-2">
+          <h2 className="text-lg sm:text-xl font-bold text-[#1A3326] min-w-0">
             {currentChapter.title}
           </h2>
           <span className="text-xs text-stone-400">

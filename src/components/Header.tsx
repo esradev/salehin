@@ -18,6 +18,7 @@ import {
 import { ROLES_CONFIG } from '../data/mockData';
 import { ROLE_THEMES } from '../theme/roleThemes';
 import { Announcement, UserProfile, UserRole } from '../types';
+import emblemImage from '../assets/images/salehin_badge_emblem_1793894948131.jpg';
 
 interface HeaderProps {
   currentUser: UserProfile;
@@ -127,12 +128,12 @@ export const Header: React.FC<HeaderProps> = ({
       {/* Top Bar Contract with Role Dynamic Theme Color */}
       <header className={`sticky top-0 z-30 ${theme.headerBg} text-white border-b ${theme.headerBorder} shadow-md transition-colors duration-300`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between gap-4 h-16">
+          <div className="flex items-center justify-between gap-2 sm:gap-4 h-16 min-w-0">
             {/* Zone 1: Brand Wordmark with Salehin Emblem */}
-            <div className="flex items-center gap-3 shrink-0">
+            <div className="flex items-center gap-2 sm:gap-3 min-w-0">
               <button
                 onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-                className="md:hidden p-2 text-stone-200 hover:text-white rounded-lg focus:outline-none"
+                className="xl:hidden p-2 text-stone-200 hover:text-white rounded-lg focus:outline-none"
                 aria-label="منوی اصلی"
               >
                 {mobileMenuOpen ? <X size={22} /> : <Menu size={22} />}
@@ -140,18 +141,18 @@ export const Header: React.FC<HeaderProps> = ({
 
               <button
                 onClick={() => onTabChange(currentUser.role === 'basiji' ? 'education' : 'dashboard')}
-                className="flex items-center gap-2.5 text-right group focus:outline-none"
+                className="flex items-center gap-2.5 text-right group focus:outline-none min-w-0"
               >
                 <div className="w-9 h-9 rounded-full bg-black/40 border border-white/20 p-0.5 flex items-center justify-center shadow-inner overflow-hidden">
                   <img
-                    src="/src/assets/images/salehin_badge_emblem_1793894948131.jpg"
+                    src={emblemImage}
                     alt="نشان شجره طیبه صالحین"
                     referrerPolicy="no-referrer"
                     className="w-full h-full object-cover rounded-full"
                   />
                 </div>
-                <div>
-                  <span className="text-base font-bold tracking-tight text-white whitespace-nowrap block">
+                <div className="min-w-0">
+                  <span className="text-sm sm:text-base font-bold tracking-tight text-white truncate block">
                     سامانه صالحین بسیج
                   </span>
                   <span className={`text-[10px] ${theme.accentText} font-bold block -mt-0.5`}>
@@ -162,7 +163,7 @@ export const Header: React.FC<HeaderProps> = ({
             </div>
 
             {/* Zone 2: Navigation Links tailored per active role */}
-            <nav className="hidden md:flex items-center gap-1 lg:gap-2">
+            <nav className="hidden xl:flex items-center gap-1 lg:gap-2 min-w-0">
               {navItems.map((item) => {
                 const Icon = item.icon;
                 const isActive = currentTab === item.id;
@@ -220,7 +221,7 @@ export const Header: React.FC<HeaderProps> = ({
                 </button>
 
                 {showNotifications && (
-                  <div className="absolute left-0 mt-2 w-80 bg-white text-stone-900 rounded-xl shadow-xl border border-stone-200 p-3 z-50">
+                  <div className="absolute left-0 mt-2 w-[min(20rem,calc(100vw-2rem))] max-w-[calc(100vw-2rem)] bg-white text-stone-900 rounded-xl shadow-xl border border-stone-200 p-3 z-50">
                     <div className="flex items-center justify-between pb-2 mb-2 border-b border-stone-100">
                       <span className="text-xs font-bold text-stone-900">اعلان‌های فوری و ابلاغیه‌ها</span>
                       <span className="text-[11px] text-stone-500">{importantNotices.length} مورد مهم</span>
@@ -270,7 +271,7 @@ export const Header: React.FC<HeaderProps> = ({
 
         {/* Mobile Dropdown Menu */}
         {mobileMenuOpen && (
-          <div className="md:hidden bg-black/40 backdrop-blur-md border-t border-white/10 px-4 pt-2 pb-4 space-y-1">
+          <div className="xl:hidden bg-black/40 backdrop-blur-md border-t border-white/10 px-4 pt-2 pb-4 space-y-1">
             <div className="py-2 border-b border-white/10 mb-2">
               <p className="text-xs text-stone-200">
                 نقش فعال: <span className={`font-bold ${theme.accentText}`}>{roleConfig.title}</span>
@@ -332,4 +333,3 @@ export const Header: React.FC<HeaderProps> = ({
     </>
   );
 };
-

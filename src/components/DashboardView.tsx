@@ -1089,6 +1089,7 @@ export const DashboardView: React.FC<DashboardViewProps> = ({
                   src={vid.thumbnailUrl}
                   alt={vid.title}
                   referrerPolicy="no-referrer"
+                  loading="lazy"
                   className="w-full h-full object-cover group-hover:opacity-90"
                 />
                 <div className="absolute inset-0 bg-black/30 flex items-center justify-center">
@@ -1130,6 +1131,7 @@ export const DashboardView: React.FC<DashboardViewProps> = ({
                   src={pam.coverUrl}
                   alt={pam.title}
                   referrerPolicy="no-referrer"
+                  loading="lazy"
                   className="w-full h-full object-cover"
                 />
               </div>
